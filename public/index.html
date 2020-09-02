@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="ScriptFrogs" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Building Construction Development AlbaStones" />
+    <meta name="description" content="AlbaStones - Construction & Development" />
+
+    <!-- title  -->
+    <title>AlbaStones - Construction & Development</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png" />
+<!--    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png" />-->
+<!--    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png" />-->
+<!--    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png" />-->
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- core style css -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.19.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.19.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.19.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body>
+
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
+
+        <!-- start header section -->
+        <header>
+
+            <div id="top-bar" class="top-bar">
+                <div class="container lg-container">
+                    <div class="row">
+                        <div class="col-md-3 xs-display-none">
+                            <ul class="top-social-icon">
+                                <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <div class="top-bar-info">
+                                <ul>
+                                    <li><i class="fas fa-phone"></i>(615) 886-8790</li>
+                                    <li><i class="fas fa-envelope"></i>albastonesllc@gmail.com</li>
+                                    <li class="sm-display-none"><i class="far fa-clock"></i>Mon-Fri: 8:00am - 5:00pm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-default border-bottom border-color-light-white">
+
+                <div class="container lg-container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- Start Logo -->
+                                        <a href="index.html" class="navbar-brand"><img id="logo" src="img/logos/logo_small_house.png" alt="logo"></a>
+                                        <!-- End Logo -->
+                                    </div>
+
+                                    <div class="navbar-toggler"></div>
+
+                                    <!-- start Menu Area -->
+                                    <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                            <ul>
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="team.html">Our Team</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                            <ul>
+                                                <li><a href="construction-service-details.html">Construction</a></li>
+                                                <li><a href="remodeling-service-details.html">Remodeling</a></li>
+                                                <li><a href="maintenance-service-details.html">Maintenance</a></li>
+                                                <li><a href="design-service-details.html">Interior Design</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="plans.html?id=1">Residential</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- end header section -->
+
+        <!-- start banner -->
+        <section class="parallax cover-background screen-height" data-background="img/banner/banner_logo_home.png">
+            <div class="absolute-middle-center z-index-1 width-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="width-70 xs-width-100">
+<!--                                <h1 class="text-white font-size50 md-font-size42 sm-font-size38 font-weight-800 text-uppercase">PLACEHOLDER TEXT</h1>-->
+<!--                                <div class="text-white text-uppercase font-weight-400 font-size36 md-font-size32 sm-font-size28 margin-20px-bottom no-letter-spacing width-60 xs-width-70">Development & Construction</div>-->
+<!--                                <p class="text-white width-60 xs-width-100 font-size16 xs-display-none line-height-30 xs-font-size14 xs-line-height-26">Sample text filler.  This will be replaced with content decided upon by the client.  This is just a placeholder.</p>-->
+<!--                                <div class="margin-30px-top sm-margin-25px-top"><a href="javascript:void(0)" class="butn theme"><span>Lean More</span></a></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end banner -->
+
+        <!-- start about section -->
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 about-us sm-margin-40px-bottom xs-margin-30px-bottom">
+                        <div class="padding-90px-right md-padding-60px-right sm-no-padding-right">
+                            <div class="inner-column text-center">
+                                <div class="image">
+                                    <img src="img/content/about-1.jpg" alt="" />
+                                </div>
+                                <div class="small-img">
+                                    <img src="img/content/about-2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-us">
+                        <h3 class="font-size15 md-font-size14 sm-font-size13 text-uppercase margin-15px-bottom md-margin-10px-bottom font-weight-400 letter-spacing-3 word-spacing-3 text-theme-color">About Us</h3>
+                        <h4 class="font-size40 md-font-size38 sm-font-size34 xs-font-size28 font-weight-500 margin-30px-bottom md-margin-25px-bottom sm-margin-20px-bottom xs-margin-15px-bottom">We Build Everything That You Need</h4>
+                        <p class="margin-30px-bottom md-margin-25px-bottom sm-margin-20px-bottom xs-margin-15px-bottom">AlbaStones is at its core a real estate firm that specializes in acquiring land to develop single-family homes for sale in Hillsborough County, Pasco County and Pinellas County.</p>
+                        <ul class="list-style12 margin-30px-bottom md-margin-25px-bottom sm-margin-20px-bottom xs-margin-15px-bottom">
+                            <li>Distinct architectural style.</li>
+                            <li>Stonework design featuring stone imported from Albania.</li>
+                        </ul>
+                        <h6 class="no-margin-bottom font-size18 font-weight-500 font-italic">- Robert Mosko</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- start plan section-->
+        <section>
+            <div class="container">
+                <div class="margin-50px-bottom xs-margin-30px-bottom text-center">
+                    <h4 class="font-size38 xs-font-size28 line-height-45 font-weight-500 no-margin-bottom">Featured Plans</h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 sm-margin-30px-bottom">
+                        <div class="blog-block">
+                            <div class="position-relative">
+                                <img src="img/blog/01.jpg" alt="" />
+                            </div>
+                            <div class="blog-text padding-30px-all md-padding-25px-all xs-padding-20px-all">
+                                <h5 class="font-size20 md-font-size18 font-weight-500 margin-10px-bottom xs-margin-5px-bottom">
+                                    <a href="plan-details.html" class="text-black">House Plan A</a>
+                                </h5>
+                                <ul class="blog-list">
+                                    <li><i class="fas fa-bed text-theme-color font-size13"></i>3</li>
+                                    <li><i class="fas fa-bath text-theme-color font-size13"></i>2.5</li>
+                                    <li><i class="fas fa-ruler text-theme-color font-size13"></i>2500 sqft</li>
+                                </ul>
+                                <p class="margin-10px-bottom">Summary text about Plan A.</p>
+                                <a href="plan-details.html" class="text-black font-weight-500 font-size14">
+                                    Read More
+                                    <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 sm-margin-30px-bottom">
+                        <div class="blog-block">
+                            <div class="position-relative">
+                                <img src="img/blog/02.jpg" alt="" />
+                            </div>
+                            <div class="blog-text padding-30px-all md-padding-25px-all xs-padding-20px-all">
+                                <h5 class="font-size20 md-font-size18 font-weight-500 margin-10px-bottom xs-margin-5px-bottom">
+                                    <a href="plan-details.html" class="text-black">House Plan B</a>
+                                </h5>
+                                <ul class="blog-list">
+                                    <li><i class="fas fa-bed text-theme-color font-size13"></i>4</li>
+                                    <li><i class="fas fa-bath text-theme-color font-size13"></i>4</li>
+                                    <li><i class="fas fa-ruler text-theme-color font-size13"></i>3300 sqft</li>
+                                </ul>
+                                <p class="margin-10px-bottom">Summary text about Plan B.</p>
+                                <a href="plan-details.html" class="text-black font-weight-500 font-size14">
+                                    Read More
+                                    <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="blog-block">
+                            <div class="position-relative">
+                                <img src="img/blog/03.jpg" alt="" />
+                            </div>
+                            <div class="blog-text padding-30px-all md-padding-25px-all xs-padding-20px-all">
+                                <h5 class="font-size20 md-font-size18 font-weight-500 margin-10px-bottom xs-margin-5px-bottom">
+                                    <a href="plan-details.html" class="text-black">House Plan C</a>
+                                </h5>
+                                <ul class="blog-list">
+                                    <li><i class="fas fa-bed text-theme-color font-size13"></i>3</li>
+                                    <li><i class="fas fa-bath text-theme-color font-size13"></i>3</li>
+                                    <li><i class="fas fa-ruler text-theme-color font-size13"></i>3100 sqft</li>
+                                </ul>
+                                <p class="margin-10px-bottom">Summary text about Plan C.</p>
+                                <a href="plan-details.html" class="text-black font-weight-500 font-size14">
+                                    Read More
+                                    <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end plan section-->
+
+        <!-- start service section -->
+        <section>
+            <div class="container">
+                <div class="margin-50px-bottom xs-margin-30px-bottom text-center">
+                    <h3 class="font-size13 text-uppercase margin-15px-bottom md-margin-10px-bottom font-weight-400 letter-spacing-3 word-spacing-3 text-theme-color">What We Do</h3>
+                    <h4 class="font-size38 sm-font-size34 xs-font-size28 line-height-45 font-weight-500 no-margin-bottom">Our Services</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 sm-margin-30px-bottom">
+                        <div class="service-block">
+                            <div class="margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom">
+                                <img src="img/services/1.png" alt="" class="md-width-60px xs-width-50px" />
+                            </div>
+                            <h5 class="font-weight-500 font-size22 md-font-size18 md-margin-15px-bottom xs-margin-10px-bottom">
+                                <a href="construction-service-details.html" class="text-black">Construction</a>
+                            </h5>
+                            <p class="text">Construction - enter some summary text about your construction service.</p>
+                            <a href="construction-service-details.html" class="text-black font-weight-600 font-size14 md-font-size13">
+                                Read More
+                                <span
+                                    class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left float-right font-weight-600">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="service-block">
+                            <div class="margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom">
+                                <img src="img/services/remodel_80.png" alt="" class="md-width-60px xs-width-50px" />
+                            </div>
+                            <h5 class="font-weight-500 font-size22 md-font-size18 md-margin-15px-bottom xs-margin-10px-bottom">
+                                <a href="remodeling-service-details.html" class="text-black">Remodeling</a>
+                            </h5>
+                            <p class="text">Remodeling - Enter some summary info describing your remodeling service.</p>
+                            <a href="remodeling-service-details.html" class="text-black font-weight-600 font-size14 md-font-size13">
+                                Read More
+                                <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left float-right font-weight-600"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 sm-margin-30px-bottom">
+                        <div class="service-block">
+                            <div class="margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom">
+                                <img src="img/services/3.png" alt="" class="md-width-60px xs-width-50px" />
+                            </div>
+                            <h5 class="font-weight-500 font-size22 md-font-size18 md-margin-15px-bottom xs-margin-10px-bottom">
+                                <a href="maintenance-service-details.html" class="text-black">Maintenance</a></h5>
+                            <p class="text"> Maintenance - Add some summary info here about your maintenance service.</p>
+                            <a href="maintenance-service-details.html" class="text-black font-weight-600 font-size14 md-font-size13">
+                                Read More
+                                <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left float-right font-weight-600"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 sm-margin-30px-bottom">
+                        <div class="service-block">
+                            <div class="margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom">
+                                <img src="img/services/interior-design_80.png" alt="" class="md-width-60px xs-width-50px" />
+                            </div>
+                            <h5 class="font-weight-500 font-size22 md-font-size18 md-margin-15px-bottom xs-margin-10px-bottom">
+                                <a href="design-service-details.html" class="text-black">Interior Design</a></h5>
+                            <p class="text"> Interior Design - Add some summary info here about your design service.</p>
+                            <a href="design-service-details.html" class="text-black font-weight-600 font-size14 md-font-size13">
+                                Read More
+                                <span class="ti-arrow-right vertical-align-middle font-size12 margin-10px-left float-right font-weight-600"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service section -->
+
+        <!-- start footer section -->
+        <footer>
+            <div class="footer-style3-top"></div>
+            <div class="container">
+                <div class="footer-5 footer-style3">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 sm-margin-25px-bottom mobile-margin-20px-bottom">
+                            <div class="sm-padding-50px-right xs-no-padding-right">
+                                <span class="footer-logo margin-25px-bottom xs-margin-15px-bottom display-inline-block">
+                                    <img src="img/logos/logo_small_house_white_130x52.png" alt="logo">
+                                </span>
+                                <span class="footer-logo margin-25px-left display-inline-block">
+                                    <h4 class="mobile-margin-10px-bottom">AlbaStones</h4>
+                                </span>
+                                <p class="no-margin-bottom">Our mission is to create homes that that of high value and unique style. AlbaStones homes are valued for their quality craftsmanship and attention to detail. It is our goal to build a home that reflects a unique architectural style and offer to our client professional guidance and personalized customer service.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 mobile-margin-20px-bottom">
+                            <div class="padding-40px-left sm-no-padding-left">
+                                <h4 class="mobile-margin-10px-bottom">Quick Links</h4>
+                                <ul class="footer-list no-margin-bottom">
+                                    <li><a href="javascript:void(0)" class="font-size14">About us</a></li>
+                                    <li><a href="javascript:void(0)" class="font-size14">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <h4 class="mobile-margin-10px-bottom">Quick Contact</h4>
+                            <ul class="">
+                                <li><i class="ti-location-pin margin-10px-right md-margin-two-right text-theme-color"></i>2506 Middleton Grove Drive<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brandon, FL 33511</li>
+                                <li><i class="ti-location-pin margin-10px-right md-margin-two-right text-theme-color"></i>3335 Fox Chase Hunt Drive<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palm Harbor, FL 34683</li>
+                                <li><a href="javascript:void(0)" class="font-size14"><i class="ti-email margin-10px-right md-margin-two-right text-theme-color"></i>albastonesllc@gmail.com</a></li>
+                                <li><i class="ti-mobile margin-10px-right md-margin-two-right text-theme-color"></i>(615) 886-8790</li>
+                            </ul>
+                            <div class="footer-icon">
+                                <ul class="no-margin-bottom">
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="fab fa-youtube "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-style3-bottom">
+                <div class="container">
+                    <p class="font-size14">&copy; 2020 AlbaStones, LLC. Web Design and Hosting by <a href="http://www.scriptfrogs.com">ScriptFrogs</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer section -->
+
+    </div>
+    <!-- end main-wrapper section -->
+
+    <!-- start scroll to top -->
+    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <!-- end scroll to top -->
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- modernizr js -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- navigation -->
+    <script src="js/nav-menu.js"></script>
+
+    <!-- tab -->
+    <script src="js/easy.responsive.tabs.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- waypoints js -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- countdown js -->
+    <script src="js/countdown.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- revolution slider js files start -->
+    <script src="js/rev_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="js/rev_slider/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/rev_slider/extensions/revolution.extension.video.min.js"></script>
+    <!-- revolution slider js files end -->
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- all js include end -->
+
+</body>
+
+</html>
