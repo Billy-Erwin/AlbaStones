@@ -1,4 +1,4 @@
-import { getTeamMembers } from "../js/databaseUtilities.js";
+import { getTeamMembers, getPhotoUrl} from "../js/databaseUtilities.js";
 
 class AlbaStonesTeam extends HTMLElement {
 
@@ -13,6 +13,8 @@ class AlbaStonesTeam extends HTMLElement {
         const aRow = document.getElementById('teamSectionRow');
         let teamMembers = await getTeamMembers();
         for (let teamMember of teamMembers) {
+            let photoUrl = await getPhotoUrl(teamMember.photo);
+            teamMember.photo1 = photoUrl;
             let aNewOne = new TeamMember();
             aNewOne.setIt(teamMember);
             aRow.appendChild(aNewOne);
