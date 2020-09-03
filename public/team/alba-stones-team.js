@@ -14,7 +14,7 @@ class AlbaStonesTeam extends HTMLElement {
         let teamMembers = await getTeamMembers();
         for (let teamMember of teamMembers) {
             let photoUrl = await getPhotoUrl(teamMember.photo);
-            teamMember.photo1 = photoUrl;
+            teamMember.photoUrl = photoUrl;
             let aNewOne = new TeamMember();
             aNewOne.setIt(teamMember);
             aRow.appendChild(aNewOne);

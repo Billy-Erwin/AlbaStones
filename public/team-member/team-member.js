@@ -8,7 +8,7 @@ class TeamMember extends HTMLElement {
             <div class="margin-30px-bottom mobile-margin-20px-bottom">
                 <div class="team-block position-relative">
                     <div class="team-img position-relative overflow-hidden">
-                        <img src="${this.teamMemberDetail.photo1}" alt="" />
+                        <img src="${this.teamMemberDetail.photoUrl}" alt="" />
                         <div class="box-overlay"></div>
                         <ul class="social-icons no-margin-bottom">
                             <li><a href="javascript:void(0)"><i class="ti-facebook"></i></a></li>
