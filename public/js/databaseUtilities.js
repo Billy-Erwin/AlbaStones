@@ -1,7 +1,5 @@
-// const firebase = require("firebase");
-// Required for side-effects
-// require("firebase/firestore");
 var db;
+
 var firebaseConfig = {
     projectId: "albastones-128c9",
     apiKey: "AIzaSyD-toD2yGl07RmaBCiTS8UZt18rzMVP_fA",
@@ -17,6 +15,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 db = firebase.firestore();
 
+var storageRef = firebase.storage().ref();
 
 async function getTeamMembers () {
     return new Promise((resolve, reject) => {
@@ -24,7 +23,8 @@ async function getTeamMembers () {
             let teamMembers = [];
             db.collection("team_members").orderBy("displayOrder", "asc").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
-                    teamMembers.push(doc.data());
+                    let teamCopy = { ...doc.data()};
+                    teamMembers.push(teamCopy);
                 });
                 resolve(teamMembers);
             });
@@ -34,4 +34,15 @@ async function getTeamMembers () {
     });
 }
 
-export {getTeamMembers};
+async function getPhotoUrl(photoPath) {
+      return new Promise((resolve, reject) => {
+          storageRef.child(photoPath).getDownloadURL().then(function (url) {
+              resolve(url);
+          }).catch(function (error) {
+              reject(error);
+          });
+      });
+}
+
+
+export {getPhotoUrl, getTeamMembers};
