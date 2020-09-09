@@ -13,7 +13,7 @@ function sendMail() {
         message: text
     };
 
-    emailjs.send('service_9e2b0gf', 'template_zyfhl0j', templateParams)
+    emailjs.send('service_nm5dnjq', 'template_1gckf7r', templateParams)
         .then(function(response) {
             emailForm.reset();
             document.getElementById('form-header').innerText = 'Message Sent!'
