@@ -38,7 +38,7 @@ class TeamMember extends HTMLElement {
             </div>`;
     }
 
-    setIt(teamMemberDetail) {
+    setTeamMemberDetail(teamMemberDetail) {
         this.teamMemberDetail = teamMemberDetail;
     }
 }

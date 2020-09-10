@@ -1,11 +1,11 @@
 var db;
 
 var firebaseConfig = {
-    projectId: "albastones-128c9",
+    projectId: "albastones-1939b",
     apiKey: "AIzaSyD-toD2yGl07RmaBCiTS8UZt18rzMVP_fA",
-    authDomain: "albastones-128c9.firebaseapp.com",
-    databaseURL: "https://albastones-128c9.firebaseio.com",
-    storageBucket: "albastones-128c9.appspot.com",
+    authDomain: "albastones-1939b.firebaseapp.com",
+    databaseURL: "https://albastones-1939b.firebaseio.com",
+    storageBucket: "albastones-1939b.appspot.com",
     messagingSenderId: "503473807526",
     appId: "1:503473807526:web:276446b752708a0c489467",
     measurementId: "G-G8JZKQJKCG"
