@@ -10,14 +10,14 @@ class AlbaStonesTeam extends HTMLElement {
                 </div>
             </section>`;
 
-        const aRow = document.getElementById('teamSectionRow');
+        const teamMemberRow = document.getElementById('teamSectionRow');
         let teamMembers = await getTeamMembers();
         for (let teamMember of teamMembers) {
             let photoUrl = await getPhotoUrl(teamMember.photo);
             teamMember.photoUrl = photoUrl;
-            let aNewOne = new TeamMember();
-            aNewOne.setIt(teamMember);
-            aRow.appendChild(aNewOne);
+            let newTeamMember = new TeamMember();
+            newTeamMember.setTeamMemberDetail(teamMember);
+            teamMemberRow.appendChild(newTeamMember);
         }
     }
 }
