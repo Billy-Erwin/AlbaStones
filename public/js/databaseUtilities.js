@@ -54,10 +54,10 @@ async function getPhotoUrlFromReference(reference) {
     });
 }
 
-async function getPhotoGallery() {
+async function getPhotoGallery(folderName) {
     return new Promise((resolve, reject) => {
         try {
-            storageRef.child('photo_gallery').listAll().then(function(result) {
+            storageRef.child(folderName).listAll().then(function(result) {
                 resolve(result.items);
             });
         } catch (e) {
