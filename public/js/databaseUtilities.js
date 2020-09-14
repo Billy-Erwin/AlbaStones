@@ -35,14 +35,36 @@ async function getTeamMembers () {
 }
 
 async function getPhotoUrl(photoPath) {
-      return new Promise((resolve, reject) => {
-          storageRef.child(photoPath).getDownloadURL().then(function (url) {
-              resolve(url);
-          }).catch(function (error) {
-              reject(error);
-          });
-      });
+    return new Promise((resolve, reject) => {
+        storageRef.child(photoPath).getDownloadURL().then(function (url) {
+            resolve(url);
+        }).catch(function (error) {
+            reject(error);
+        });
+    });
+}
+
+async function getPhotoUrlFromReference(reference) {
+    return new Promise((resolve, reject) => {
+        reference.getDownloadURL().then(function (url) {
+            resolve(url);
+        }).catch(function (error) {
+            reject(error);
+        });
+    });
+}
+
+async function getPhotoGallery(folderName) {
+    return new Promise((resolve, reject) => {
+        try {
+            storageRef.child(folderName).listAll().then(function(result) {
+                resolve(result.items);
+            });
+        } catch (e) {
+            reject(error);
+        }
+    });
 }
 
 
-export {getPhotoUrl, getTeamMembers};
+export { getPhotoUrl, getTeamMembers, getPhotoGallery, getPhotoUrlFromReference };

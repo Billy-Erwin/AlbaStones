@@ -20,7 +20,6 @@ class AlbaStonesTeam extends HTMLElement {
             teamMemberRow.appendChild(newTeamMember);
         }
     }
-
 }
 
 customElements.define('alba-stones-team', AlbaStonesTeam);
