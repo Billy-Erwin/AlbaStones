@@ -33,6 +33,22 @@ async function getTeamMembers () {
         }
     });
 }
+async function getHousePlans () {
+    return new Promise((resolve, reject) => {
+        try {
+            let housePlans = [];
+            db.collection("house_plans").get().then((querySnapshot) => {
+                querySnapshot.forEach((doc) => {
+                    let planCopy = { ...doc.data()};
+                    housePlans.push(planCopy);
+                });
+                resolve(housePlans);
+            });
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
 
 async function getPhotoUrl(photoPath) {
     return new Promise((resolve, reject) => {
@@ -67,4 +83,4 @@ async function getPhotoGallery(folderName) {
 }
 
 
-export { getPhotoUrl, getTeamMembers, getPhotoGallery, getPhotoUrlFromReference };
+export { getPhotoUrl, getTeamMembers, getPhotoGallery, getPhotoUrlFromReference, getHousePlans };
