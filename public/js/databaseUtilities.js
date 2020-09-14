@@ -1,6 +1,5 @@
-var db;
 
-var firebaseConfig = {
+const firebaseConfig = {
     projectId: "albastones-1939b",
     apiKey: "AIzaSyD-toD2yGl07RmaBCiTS8UZt18rzMVP_fA",
     authDomain: "albastones-1939b.firebaseapp.com",
@@ -11,11 +10,10 @@ var firebaseConfig = {
     measurementId: "G-G8JZKQJKCG"
 };
 
-// Initialize Cloud Firestore through Firebase
 firebase.initializeApp(firebaseConfig);
-db = firebase.firestore();
+const db = firebase.firestore();
 
-var storageRef = firebase.storage().ref();
+const storageRef = firebase.storage().ref();
 
 async function getTeamMembers () {
     return new Promise((resolve, reject) => {
@@ -40,6 +38,7 @@ async function getHousePlans () {
             db.collection("house_plans").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
                     let planCopy = { ...doc.data()};
+                    planCopy.id = doc.id;
                     housePlans.push(planCopy);
                 });
                 resolve(housePlans);

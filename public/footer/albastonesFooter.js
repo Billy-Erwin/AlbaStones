@@ -36,6 +36,7 @@ class AlbastonesFooter extends HTMLElement {
                                 <li><a href="javascript:void(0)" class="font-size14"><i class="ti-email margin-10px-right md-margin-two-right text-theme-color"></i>albastonesllc@gmail.com</a></li>
                                 <li><i class="ti-mobile margin-10px-right md-margin-two-right text-theme-color"></i>(615) 886-8790</li>
                             </ul>
+<!--                            If you want to add social media in the future-->
 <!--                            <div class="footer-icon">-->
 <!--                                <ul class="no-margin-bottom">-->
 <!--                                    <li>-->
