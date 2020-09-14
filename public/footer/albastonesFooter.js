@@ -22,8 +22,8 @@ class AlbastonesFooter extends HTMLElement {
                             <div class="padding-40px-left sm-no-padding-left">
                                 <h4 class="mobile-margin-10px-bottom">Quick Links</h4>
                                 <ul class="footer-list no-margin-bottom">
-                                    <li><a href="javascript:void(0)" class="font-size14">About us</a></li>
-                                    <li><a href="javascript:void(0)" class="font-size14">Contact us</a></li>
+                                    <li><a href="about-us.html" class="font-size14">About us</a></li>
+                                    <li><a href="contact-us.html" class="font-size14">Contact us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,22 +36,22 @@ class AlbastonesFooter extends HTMLElement {
                                 <li><a href="javascript:void(0)" class="font-size14"><i class="ti-email margin-10px-right md-margin-two-right text-theme-color"></i>albastonesllc@gmail.com</a></li>
                                 <li><i class="ti-mobile margin-10px-right md-margin-two-right text-theme-color"></i>(615) 886-8790</li>
                             </ul>
-                            <div class="footer-icon">
-                                <ul class="no-margin-bottom">
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="fab fa-youtube "></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+<!--                            <div class="footer-icon">-->
+<!--                                <ul class="no-margin-bottom">-->
+<!--                                    <li>-->
+<!--                                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="javascript:void(0)"><i class="fab fa-youtube "></i></a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
