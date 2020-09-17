@@ -36,7 +36,7 @@ class AlbastonesGallery extends HTMLElement {
             galleryImage.innerHTML = `
                 <div class="portfolio-block position-relative overflow-hidden item">
                     <div class="item-img" style="width: 340px; height: 274px;">
-                        <img src="${photoUrl}" alt="..." />
+                        <img src="${photoUrl}" alt="..." style="min-height: 100%;"/>
                     </div>
                     <div class="item-content">
                         <div class="item-icon margin-10px-bottom">

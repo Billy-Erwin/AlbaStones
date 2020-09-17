@@ -44,9 +44,11 @@
         <albastones-header></albastones-header>
 
         <!-- start page title section -->
-        <section class="page-title-section bg-img cover-background" data-overlay-dark="75" data-background="img/banner/blueprint_1_1920x603.png">
+        <section
+            class="page-title-section bg-img cover-background"
+            data-overlay-dark="75"
+            data-background="img/banner/blueprint_1_1920x603.png">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Plan Details</h1>
@@ -58,57 +60,12 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- end page title section -->
 
-        <!-- start project details section -->
-        <section>
-            <div class="container">
-                <div class="project-detail-block">
-                    <div class="row margin-40px-bottom md-margin-25px-bottom">
-                        <div class="col-lg-8 sm-margin-25px-bottom">
-                            <div class="">
-                                <img src="img/content/project-details.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="padding-20px-left md-no-padding-left">
-                                <h5>PLAN NAME</h5>
-                                <p class="md-display-none sm-display-block">This should be a short description of the plan</p>
-                                <ul class="project-list no-margin-bottom">
-                                    <li>
-                                        <i class="fas fa-bed text-theme-color"></i>
-                                        <h6 class="no-margin-bottom font-size16 xs-font-size15 line-height-22 font-weight-500">Bedrooms</h6>
-                                        <p class="no-margin-bottom">Number of bedrooms</p>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-bath text-theme-color"></i>
-                                        <h6 class="no-margin-bottom font-size16 xs-font-size15 line-height-22 font-weight-500">Bathrooms</h6>
-                                        <p class="no-margin-bottom">Number of bathrooms</p>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-ruler text-theme-color"></i>
-                                        <h6 class="no-margin-bottom font-size16 xs-font-size15 line-height-22 font-weight-500">Square Footage</h6>
-                                        <p class="no-margin-bottom">Total Sqft</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Additional Details</h4>
-                    <p>Here you can add additional details about the plan</p>
-
-                </div>
-            </div>
-        </section>
-        <!-- end plan details section -->
-        <albastones-gallery data="photo_gallery"></albastones-gallery>
-
-        <!-- start footer section -->
+        <plan-details></plan-details>
         <albastones-footer></albastones-footer>
-        <!-- end footer section -->
     </div>
     <!-- end main-wrapper section -->
 
@@ -157,10 +114,10 @@
     <!-- custom scripts -->
     <script src="js/main.js"></script>
     <script type="module" src="js/databaseUtilities.js"></script>
+    <script src="housePlans/planDetails.js"></script>
     <script type="module" src="gallery/albastonesGallery.js"></script>
     <script src="header/albastonesHeader.js"></script>
     <script src="footer/albastonesFooter.js"></script>
-
 
     <script src="/__/firebase/7.19.0/firebase-app.js"></script>
     <script src="/__/firebase/7.19.0/firebase-firestore.js"></script>
