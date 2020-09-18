@@ -16,7 +16,9 @@ class TeamMember extends HTMLElement {
                             <li><a href="javascript:void(0)"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <div class="detail bg-light-gray padding-30px-all md-padding-25px-all xs-padding-15px-all text-center">
+                    <div
+                        style="height: 200px;"
+                        class="detail bg-light-gray padding-30px-all md-padding-25px-all xs-padding-15px-all text-center">
                         <h5 class="margin-5px-bottom xs-no-margin-bottom font-size20 xs-font-size18">
                             <a href="javascript:void(0)" class="text-black">${this.teamMemberDetail.displayName}</a>
                         </h5>

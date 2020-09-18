@@ -28,14 +28,14 @@ class HousePlans extends HTMLElement {
                     </div>
                     <div class="blog-text padding-30px-all md-padding-25px-all xs-padding-20px-all">
                         <h5 class="font-size20 md-font-size18 font-weight-500 margin-10px-bottom xs-margin-5px-bottom">
-                            <a href="plan-details.html" class="text-black">${housePlan.title}</a>
+                            <a href="plan-details.html?${queryString}" class="text-black">${housePlan.title}</a>
                         </h5>
                         <ul class="blog-list">
                             <li><i class="fas fa-bed text-theme-color font-size13"></i>${housePlan.bedrooms}</li>
                             <li><i class="fas fa-bath text-theme-color font-size13"></i>${housePlan.bathrooms}</li>
                             <li><i class="fas fa-ruler text-theme-color font-size13"></i>${housePlan.totalSqft} sqft</li>
                         </ul>
-                        <p class="margin-10px-bottom">${housePlan.description}</p>
+                        <p style="height: 56px;" class="margin-10px-bottom">${housePlan.description}</p>
                         <a
                             href="plan-details.html?${queryString}"
                             class="text-black font-weight-500 font-size14">
@@ -48,7 +48,5 @@ class HousePlans extends HTMLElement {
             housePlanContainer.appendChild(housePlanDiv);
         }
     }
-
 }
-
 customElements.define('house-plans', HousePlans);

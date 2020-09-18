@@ -989,7 +989,6 @@ a.butn.white:hover, a.butn.white:active {
         background: #89be4f;
         color: #fff; }
 .side-bar .banner-img-box {
-  background-image: url(../img/services/05.jpg);
   padding: 15px;
   color: #fff;
   text-align: center;
@@ -1188,7 +1187,7 @@ a.butn.white:hover, a.butn.white:active {
       top: -40px;
       bottom: 60px;
       right: -40px;
-      border: 10px solid #f6f6f6; }
+      border: 10px solid #89be4f; }
   .about-us .inner-column .small-img {
     position: absolute;
     right: 0px;
@@ -1458,7 +1457,6 @@ a.butn.white:hover, a.butn.white:active {
         background: #89be4f;
         color: #fff; }
 .service-side-bar .banner-img-box {
-  background-image: url(../img/services/05.jpg);
   padding: 15px;
   color: #fff;
   text-align: center;
