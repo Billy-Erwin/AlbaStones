@@ -28,7 +28,7 @@ class HousePlans extends HTMLElement {
                     </div>
                     <div class="blog-text padding-30px-all md-padding-25px-all xs-padding-20px-all">
                         <h5 class="font-size20 md-font-size18 font-weight-500 margin-10px-bottom xs-margin-5px-bottom">
-                            <a href="plan-details.html" class="text-black">${housePlan.title}</a>
+                            <a href="plan-details.html?${queryString}" class="text-black">${housePlan.title}</a>
                         </h5>
                         <ul class="blog-list">
                             <li><i class="fas fa-bed text-theme-color font-size13"></i>${housePlan.bedrooms}</li>
