@@ -13,7 +13,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
-
 const storageRef = firebase.storage().ref();
 
 async function getTeamMembers () {
@@ -32,11 +31,16 @@ async function getTeamMembers () {
         }
     });
 }
-async function getHousePlans () {
+
+async function getHousePlans (featured) {
     return new Promise((resolve, reject) => {
         try {
             let housePlans = [];
-            db.collection("house_plans").get().then((querySnapshot) => {
+            let housePlanRef = db.collection("house_plans");
+            if (featured) {
+                housePlanRef = housePlanRef.where("featured", "==", true).limit(3);
+            }
+            housePlanRef.get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
                     let planCopy = { ...doc.data()};
                     planCopy.id = doc.id;
@@ -81,6 +85,5 @@ async function getPhotoGallery(folderName) {
         }
     });
 }
-
 
 export { getPhotoUrl, getTeamMembers, getPhotoGallery, getPhotoUrlFromReference, getHousePlans };

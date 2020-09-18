@@ -13,12 +13,10 @@ class FeaturedPlans extends HTMLElement {
             </section>
         `;
 
-        let featuredHousePlans = await getHousePlans();
+        let featuredHousePlans = await getHousePlans(true);
         let featuredPlanContainer = document.getElementById('featured_plans_container');
-        // let featuredPlan = featuredHousePlans[0];
 
         for (let featuredPlan of featuredHousePlans) {
-        // for (let i = 0; i < 3; i++) {
             let photoUrl = await getPhotoUrl(featuredPlan.mainPhoto);
             featuredPlan.photoUrl = photoUrl;
             let queryString = new URLSearchParams(featuredPlan).toString();
@@ -40,7 +38,7 @@ class FeaturedPlans extends HTMLElement {
                             <li><i class="fas fa-bath text-theme-color font-size13"></i>${featuredPlan.bathrooms}</li>
                             <li><i class="fas fa-ruler text-theme-color font-size13"></i>${featuredPlan.totalSqft} sqft</li>
                         </ul>
-                        <p class="margin-10px-bottom">${featuredPlan.description}</p>
+                        <p style="height: 56px;" class="margin-10px-bottom">${featuredPlan.description}</p>
                         <a
                             href="plan-details.html?${queryString}"
                             class="text-black font-weight-500 font-size14">
