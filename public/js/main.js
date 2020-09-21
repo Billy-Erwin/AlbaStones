@@ -1,9 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Structure - Building Construction Template
-    Description: Building Construction Template
-    Author: Chitrakoot Web
-    Version: 1.0
 
     /* ----------------------------------
 
