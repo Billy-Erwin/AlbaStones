@@ -14,7 +14,7 @@ class AlbastonesFooter extends HTMLElement {
                                 <span class="footer-logo margin-25px-left display-inline-block">
                                     <h4 class="mobile-margin-10px-bottom">AlbaStones</h4>
                                 </span>
-                                <p class="no-margin-bottom">Our mission is to create homes that that of high value and unique style. AlbaStones homes are valued for their quality craftsmanship and attention to detail. It is our goal to build a home that reflects a unique architectural style and offer to our client professional guidance and personalized customer service.</p>
+                                <p class="no-margin-bottom">Our mission is to create homes of high value and unique style. AlbaStones homes are valued for their quality craftsmanship and attention to detail. It is our goal to build a home that reflects a unique architectural style and offer to our client professional guidance and personalized customer service.</p>
                             </div>
                         </div>
 
@@ -34,7 +34,7 @@ class AlbastonesFooter extends HTMLElement {
                                 <li><i class="ti-location-pin margin-10px-right md-margin-two-right text-theme-color"></i>2506 Middleton Grove Drive<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brandon, FL 33511</li>
                                 <li><i class="ti-location-pin margin-10px-right md-margin-two-right text-theme-color"></i>3335 Fox Chase Hunt Drive<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palm Harbor, FL 34683</li>
                                 <li><a href="javascript:void(0)" class="font-size14"><i class="ti-email margin-10px-right md-margin-two-right text-theme-color"></i>albastonesllc@gmail.com</a></li>
-                                <li><i class="ti-mobile margin-10px-right md-margin-two-right text-theme-color"></i>(615) 886-8790</li>
+                                <li><i class="ti-mobile margin-10px-right md-margin-two-right text-theme-color"></i>(727) 510-9883</li>
                             </ul>
 <!--                            If you want to add social media in the future-->
 <!--                            <div class="footer-icon">-->

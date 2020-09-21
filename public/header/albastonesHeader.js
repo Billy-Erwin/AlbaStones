@@ -17,7 +17,7 @@ class AlbastonesHeader extends HTMLElement {
                             <div class="col-xs-12 col-md-9">
                                 <div class="top-bar-info">
                                     <ul>
-                                        <li><i class="fas fa-phone"></i>(615) 886-8790</li>
+                                        <li><i class="fas fa-phone"></i>(727) 510-9883</li>
                                         <li><i class="fas fa-envelope"></i>albastonesllc@gmail.com</li>
                                         <li class="sm-display-none"><i class="far fa-clock"></i>Mon-Fri: 8:00am - 5:00pm</li>
                                     </ul>
